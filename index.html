@@ -3,8 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Christian Singer" />
-    <meta name="description" content="Personal Webiste of Christian Singer Msc in Visual Computing"/>
+    <meta name="description" content="Personal Website of Christian Singer Msc in Visual Computing"/>
     <meta property="og:title" content="Christian Singer" />
-    <meta property="og:description" content="Personal Webiste of Christian Singer Msc in Visual Computing" />
+    <meta property="og:description" content="Personal Website of Christian Singer Msc in Visual Computing" />
     <meta property="og:image" content="images/profile_pic.jpg" />
     <title>Christian Singer</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<link rel="icon" href="images/liberty-torch.png" type="image/x-icon">
+<body>
+
+    <div class="download-button">
+        <button class="btn">Download CV</button>
+    </div>
+
+    <div class="website-container">
+        <div class="website-col-1">
+            <div class="profile">
+                <img class="profile-pic" src="images/profile_pic_small.jpg" alt="Profile Picture">
+                <div class="social">
+                <ul>
+                    <li>
+                        <a href="https://github.com/Thunfischpirat" target="_blank" rel="noopener noreferrer">
+                            <img class="icon-small" src="images/github-icon.svg" alt="GitHub">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/christian-singer-868548235/"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            <img class="icon-small" src="images/linkedin-icon.svg" alt="LinkedIn">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:christiansinger09@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <img class="icon-small" src="images/email-icon.svg" alt="Email">
+                        </a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+            <!-- Navigation -->
+            <nav class="menu">
+              <ul>
+                <li><a href="#bio">Bio</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests">Interests</a></li>
+              </ul>
+            </nav>
+        </div>
+
+        <div class="website-col-2">
+            <!-- Bio -->
+            <div id="bio" class="content">
+                <h1>Bio</h1>
+                <p>
+                    I am a Master student in Visual Computing at the Saarland University currently doing my
+                    Thesis at DFKI Saarbrücken on tracking of reaction-fronts in microscale combustion experiments.
+                    I have 5+ years of experience mainly working with Python on projects in industry and academia. I
+                    am interested in classical and deep learning-based approaches to computer vision, image processing,
+                    and computer graphics.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links" id="t1" data-open="education">
+                        Education
+                    </p>
+                    <p class="tab-links" id="t2" data-open="work-experience">
+                        Work-Experience
+                    </p>
+                </div>
+                <div class="tab-contents" id="education">
+
+                </div>
+            </div>
+            <!-- Skills -->
+            <div id="skills" class="content">
+                <h1>Skills</h1>
+            </div>
+            <!-- Projects -->
+            <div id="projects" class="content">
+                <h1>Projects</h1>
+                <div class="project-container">
+                    <ul>
+                        <li>
+                            <img class="project-img" src="images/frontier_rouge.jpg" alt="Project 1">
+                            <div class="project-info">
+                                <h2>
+                                    Rendering Competition
+                                    <a href="https://computer-graphics-showcase.vercel.app/"
+                                       target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img class="icon-small" src="images/open-link.svg" alt="rendering-comp">
+                                    </a>
+                                </h2>
+                                <p>Implemented a ray tracer in C++ with additional postprocessing
+                                   and other features. Created a scene in Blender and rendered it
+                                   with our own ray tracer.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="project-img" src="images/inpainted_cars.png" alt="Project 2">
+                            <div class="project-info">
+                                <h2>
+                                    Inpainting Detection
+                                    <a href="https://github.com/HLCV-23/Inpainting-Detection"
+                                       target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img class="icon-small" src="images/open-link.svg" alt="inpaint-detect">
+                                    </a>
+                                </h2>
+                                <p>We created a data-generation pipeline that leverages Facebook AI's
+                                   Segment Anything model to cut out semantically meaningful parts of
+                                   images and inpaint them with Stable Diffusion. We then trained a classifier
+                                   on the dataset to decide if an image contained inpainted regions.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img class="project-img" src="images/neural_network.png" alt="Project 3">
+                            <div class="project-info">
+                                <h2>
+                                    Neural Network
+                                    <a href="https://github.com/Thunfischpirat/NeuralNetwork"
+                                       target="_blank"
+                                        rel="noopener noreferrer">
+                                        <img class="icon-small" src="images/open-link.svg" alt="rendering-comp">
+                                    </a>
+                                </h2>
+                                <p>Implemented a fully connected neural network in Python from scratch
+                                   with backpropagation and gradient descent. The networks depth and
+                                   width can be adjusted by the user.
+                                </p>
+                            </div>
+                        </li>
+                </div>
+            </div>
+            <!-- Interests -->
+            <div id="interests" class="content">
+                <h1>Interests</h1>
+            </div>
+        </div>
+    </div>
+    <main>
+
+    </main>
+</body>

@@ -1,0 +1,207 @@
+body {
+    background-color: #262625;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Calibri Light" , sans-serif;
+}
+
+.download-button {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.download-button .btn {
+    background-color: Transparent;
+    border: 1px solid white;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.download-button .btn:hover {
+    border-color: #E5C601;
+    color: #E5C601;
+}
+
+.profile {
+    width: 368px;
+    height: 380px;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    margin-bottom: 10px;
+}
+
+.profile .social {
+    margin-top: 10px;
+}
+
+.profile .profile-pic {
+    width: 100%;
+    border-radius: 15%;
+}
+
+.social {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.social ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 5px;
+	padding: 0;
+}
+
+.icon-small {
+    width: 30px;
+    height: 30px;
+}
+
+.social .icon-small:hover {
+    transform: scale(1.2);
+}
+
+.menu {
+    background-color: #000000;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+    width: 200px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.menu ul {
+    list-style: none;
+    font-size: 30px;
+    padding: 0;
+}
+
+.menu ul li {
+    padding-bottom: 10px;
+    padding-left: 10px;
+    line-height: 2;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.menu ul li a:hover, .menu ul li a:focus {
+    color: #E5C601;
+}
+
+.website-container {
+    display: flex;
+    flex-basis: 60%;
+    gap: 80px;
+}
+
+.website-col-2 {
+    margin-top: 30px;
+    margin-right: 300px;
+}
+
+.content {
+    color: white;
+    margin-bottom: 30px;
+    line-height: 2;
+    font-size: 50px
+}
+
+.content h1 {
+    font-size: 1em;
+}
+
+.content p {
+    font-size: 0.5em;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 30px 0 50px;
+}
+
+.tab-links {
+    margin-right: 80px;
+    font-weight: bold;
+    background-color: black;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.tab-links:hover {
+    color: #E5C601;
+    cursor: pointer;
+}
+
+.tab-links:active {
+    color: #E5C601;
+}
+
+.project-container ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 80px;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow:  8px 8px 5px 0 rgba(0, 0, 0, 0.6);
+}
+
+.project-container .project-img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    border-radius: 15px;
+    object-fit: contain;
+
+}
+
+.project-container ul li img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.project-container ul li .project-info {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 500px;
+    background: rgba(86, 86, 90, 0.95);
+    color: white;
+    transition: bottom 0.3s ease-in-out;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.project-container ul li .project-info h2{
+    font-size: 30px;
+    padding: 90px 20px 0 20px;
+}
+
+.project-container ul li .project-info p{
+    font-size: 20px;
+    padding: 20px 20px 0 20px;
+}
+
+.project-container ul li:hover .project-info {
+    bottom: 0;
+}
+
+
