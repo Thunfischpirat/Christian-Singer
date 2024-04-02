@@ -163,6 +163,7 @@ a {
     list-style-type: none;
     display: inline-block;
     margin-right: 80px;
+    margin-bottom: 120px;
     position: relative;
     width: 500px;
     height: 500px;
@@ -223,7 +224,7 @@ a {
 }
 
 .content-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     font-size: 20px;
     line-height: 1.5;
 }
@@ -236,8 +237,12 @@ a {
 }
 
 .content-item .duration {
-    font-size: 0.8em;
+    font-size: 1em;
     color: #E5C601;
+}
+
+.content-item p {
+    font-size: 1em;
 }
 
 
@@ -247,10 +252,13 @@ footer {
     box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.6);
     text-align: center;
     padding: 20px;
+    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 footer .social ul {
