@@ -12,7 +12,6 @@
 </head>
 <link rel="icon" href="images/liberty-torch.png" type="image/x-icon">
 <body>
-
     <div class="download-button">
         <a href="files/CV.pdf" download>
             <button class="btn">Download CV</button>
@@ -49,9 +48,7 @@
             <nav class="menu">
               <ul>
                 <li><a href="#bio">Bio</a></li>
-                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#interests">Interests</a></li>
               </ul>
             </nav>
         </div>
@@ -67,21 +64,106 @@
                     am interested in classical and deep learning-based approaches to computer vision, image processing,
                     and computer graphics.
                 </p>
-                <div class="tab-titles">
-                    <p class="tab-links" id="t1" data-open="education">
-                        Education
-                    </p>
-                    <p class="tab-links" id="t2" data-open="work-experience">
-                        Work-Experience
+            </div>
+            <div class="tab-titles">
+                <div class="tab-buttons">
+                    <a href="#education-content" class="tab-links">Education</a>
+                    <a href="#work-experience-content" class="tab-links">Work Experience</a>
+                    <a href="#skills-content" class="tab-links">Skills</a>
+                    <a href="#interests" class="tab-links">Interests</a>
+                </div>
+            </div>
+            <!-- Education -->
+            <div class="tab-contents" id="education-content">
+                <div class="content-item">
+                    <h2>Saarland University</h2>
+                    <h3 class="type">Master of Science - MS, Visual Computing</h3>
+                    <p  class="duration"> Oct. 2022 - now</p>
+                    <p  class="info">Current grade: 1.7</p>
+                </div>
+                <div class="content-item">
+                    <h2>Mannheim University of Applied Sciences</h2>
+                    <h3 class="type">Master of Science - MS, Medical Data Science</h3>
+                    <p  class="duration"> Sept. 2021 - Sept. 2022</p>
+                    <p  class="info">Final grade: 1.3</p>
+                </div>
+                <div class="content-item">
+                    <h2 class>RPTU Kaiserslautern</h2>
+                    <h3 class="title-type">Bachelor of Science - BS, Mathematics</h3>
+                    <p  class="duration"> Okt. 2017 - Aug. 2021</p>
+                    <p  class="info">Final grade: 2.2</p>
+                </div>
+            </div>
+            <!-- Work Experience -->
+            <div class="tab-contents" id="work-experience-content">
+                <div class="content-item">
+                    <h2>Vision Impulse</h2>
+                    <h3 class="type">Working Student</h3>
+                    <p  class="duration"> Oct. 2023 - Feb. 2024</p>
+                    <p  class="info">
+                        Design and Implement Neural Networks in PyTorch to predict agricultural yields from
+                        hyperspectral satellite images.
                     </p>
                 </div>
-                <div class="tab-contents" id="education">
-
+                <div class="content-item">
+                    <h2>Schwarz IT KG</h2>
+                    <h3 class="type">Working Student</h3>
+                    <p  class="duration"> Mai. 2022 - Sept. 2023</p>
+                    <p  class="info">
+                        Design and Implement Neural Networks in PyTorch for Object detection and segmentation.
+                    </p>
+                </div>
+                <div class="content-item">
+                    <h2>Fraunhofer ITWM</h2>
+                    <h3 class="title-type">Internship</h3>
+                    <p  class="duration"> March. 2020 - Apr. 2021</p>
+                    <p  class="info">
+                        Processing and analysis of medical data in Python and classification with Random Forest.
+                    </p>
                 </div>
             </div>
             <!-- Skills -->
-            <div id="skills" class="content">
-                <h1>Skills</h1>
+            <div class="tab-contents" id="skills-content">
+                <div class="content-item">
+                    <h2>Programming Languages</h2>
+                    <p  class="info">Python, C/C++</p>
+                </div>
+                <div class="content-item">
+                    <h2>Frameworks & Libraries</h2>
+                    <p  class="info">PyTorch, OpenCV, NumPy, Pandas, Scikit-Learn</p>
+                </div>
+                <div class="content-item">
+                    <h2>Tools & Other</h2>
+                    <p  class="info">Git, CMake, VS Code, PyCharm, CSS, HTML</p>
+                </div>
+            </div>
+            <!-- Interests -->
+            <div class="tab-contents" id="interests">
+                <div class="content-item">
+                    <h4>Languages</h4>
+                    <p  class="info">
+                        I like learning languages. Apart from my mother language German and English, I speak fluent
+                        French, Spanish and Lebanese Arabic.
+                    </p>
+                </div>
+                <div class="content-item">
+                    <h4>Sports</h4>
+                    <p  class="info">
+                        I'm into strength training. I've built my own home gym with
+                        and I'm currently training 4 times a week.
+                    </p>
+                </div>
+                <div class="content-item">
+                    <h4>Cooking</h4>
+                    I like to cook Levantine food. I'm pretty decent at making Hummus, Foul and different grilled items.
+                </div>
+                <div class="content-item">
+                    <h4>Humanities</h4>
+                    <p  class="info">
+                        I'm interested in the philosophy and history of liberalism, especially classical liberalism.
+                        I like the works of Friedrich Hayek and Milton Friedman.
+                    </p>
+                </div>
             </div>
             <!-- Projects -->
             <div id="projects" class="content">
@@ -95,11 +177,12 @@
                                     Rendering Competition
                                     <a href="https://computer-graphics-showcase.vercel.app/"
                                        target="_blank"
-                                        rel="noopener noreferrer">
-                                        <img class="icon-small" src="images/open-link.svg" alt="rendering-comp">
+                                       rel="noopener noreferrer">
+                                       <img class="icon-small" src="images/open-link.svg" alt="rendering-comp">
                                     </a>
                                 </h2>
-                                <p>Implemented a ray tracer in C++ with additional postprocessing
+                                <p>
+                                   Implemented a ray tracer in C++ with additional postprocessing
                                    and other features. Created a scene in Blender and rendered it
                                    with our own ray tracer.
                                 </p>
@@ -116,7 +199,8 @@
                                         <img class="icon-small" src="images/open-link.svg" alt="inpaint-detect">
                                     </a>
                                 </h2>
-                                <p>We created a data-generation pipeline that leverages Facebook AI's
+                                <p>
+                                   We created a data-generation pipeline that leverages Facebook AI's
                                    Segment Anything model to cut out semantically meaningful parts of
                                    images and inpaint them with Stable Diffusion. We then trained a classifier
                                    on the dataset to decide if an image contained inpainted regions.
@@ -134,21 +218,16 @@
                                         <img class="icon-small" src="images/open-link.svg" alt="rendering-comp">
                                     </a>
                                 </h2>
-                                <p>Implemented a fully connected neural network in Python from scratch
+                                <p>
+                                   Implemented a fully connected neural network in Python from scratch
                                    with backpropagation and gradient descent. The networks depth and
                                    width can be adjusted by the user.
                                 </p>
                             </div>
                         </li>
+                    </ul>
                 </div>
-            </div>
-            <!-- Interests -->
-            <div id="interests" class="content">
-                <h1>Interests</h1>
             </div>
         </div>
     </div>
-    <main>
-
-    </main>
 </body>

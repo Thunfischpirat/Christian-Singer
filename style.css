@@ -134,6 +134,9 @@ body {
 }
 
 .tab-links {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
     margin-right: 80px;
     font-weight: bold;
     background-color: black;
@@ -202,6 +205,34 @@ body {
 
 .project-container ul li:hover .project-info {
     bottom: 0;
+}
+
+.tab-contents{
+    display: none;
+}
+
+.tab-contents:target {
+    display: block;
+    color: white;
+    font-size: 25px;
+}
+
+.content-item {
+    margin-bottom: 30px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.content-item .title h2 {
+    font-size: 1em;
+}
+.content-item .title h2 {
+    : 1em;
+}
+
+.content-item .duration {
+    font-size: 0.8em;
+    color: #E5C601;
 }
 
 
