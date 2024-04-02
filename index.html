@@ -12,13 +12,9 @@
 </head>
 <link rel="icon" href="images/liberty-torch.png" type="image/x-icon">
 <body>
-    <div class="download-button">
-        <a href="files/CV.pdf" download>
-            <button class="btn">Download CV</button>
-        </a>
-    </div>
 
     <div class="website-container">
+        <!-- profile and navigation -->
         <div class="website-col-1">
             <div class="profile">
                 <img class="profile-pic" src="images/profile_pic_small.jpg" alt="Profile Picture">
@@ -53,13 +49,22 @@
             </nav>
         </div>
 
+        <!-- Content -->
         <div class="website-col-2">
             <!-- Bio -->
             <div id="bio" class="content">
                 <h1>Bio</h1>
                 <p>
-                    I am a Master student in Visual Computing at the Saarland University currently doing my
-                    Thesis at DFKI Saarbrücken on tracking of reaction-fronts in microscale combustion experiments.
+                    I am a Master student in
+                    <a href="https://www.uni-saarland.de/studium/angebot/master/visual-computing.html">
+                        Visual Computing
+                    </a>
+                    at the Saarland University currently doing my
+                    Thesis at
+                    <a href="https://www.dfki.de/web/forschung/forschungsbereiche/agenten-und-simulierte-realitaet">
+                        DFKI
+                    </a>
+                    Saarbrücken on tracking of reaction-fronts in microscale combustion experiments.
                     I have 5+ years of experience mainly working with Python on projects in industry and academia. I
                     am interested in classical and deep learning-based approaches to computer vision, image processing,
                     and computer graphics.
@@ -229,5 +234,35 @@
                 </div>
             </div>
         </div>
+        <!-- Download CV -->
+        <div class="download-button">
+            <a href="files/CV.pdf" download>
+                <button class="btn">Download CV</button>
+            </a>
+        </div>
     </div>
 </body>
+<footer>
+    <div class="social">
+        <ul>
+            <li>
+                <a href="https://github.com/Thunfischpirat" target="_blank" rel="noopener noreferrer">
+                    <img class="icon-small" src="images/github-icon.svg" alt="GitHub">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/christian-singer-868548235/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    <img class="icon-small" src="images/linkedin-icon.svg" alt="LinkedIn">
+                </a>
+            </li>
+            <li>
+                <a href="mailto:christiansinger09@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <img class="icon-small" src="images/email-icon.svg" alt="Email">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p>&copy; 2023 Christian Singer</p>
+</footer>

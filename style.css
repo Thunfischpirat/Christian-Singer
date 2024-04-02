@@ -9,6 +9,16 @@ body {
     font-family: "Calibri Light" , sans-serif;
 }
 
+a {
+    color: #E5C601;
+    text-decoration: none;
+}
+
+.icon-small {
+    width: 30px;
+    height: 30px;
+}
+
 .download-button {
     position: absolute;
     top: 30px;
@@ -30,7 +40,7 @@ body {
     color: #E5C601;
 }
 
-.profile {
+.website-col-1 .profile {
     width: 368px;
     height: 380px;
     padding-left: 30px;
@@ -39,16 +49,16 @@ body {
     margin-bottom: 10px;
 }
 
-.profile .social {
+.website-col-1 .profile .social {
     margin-top: 10px;
 }
 
-.profile .profile-pic {
+.website-col-1 .profile .profile-pic {
     width: 100%;
     border-radius: 15%;
 }
 
-.social {
+.website-col-1 .social {
     width: 100%;
     display: flex;
     align-items: center;
@@ -56,19 +66,14 @@ body {
     flex-direction: row;
 }
 
-.social ul li{
+.website-col-1 .social ul li{
 	display: inline-block;
 	list-style: none;
 	margin: 0 5px;
 	padding: 0;
 }
 
-.icon-small {
-    width: 30px;
-    height: 30px;
-}
-
-.social .icon-small:hover {
+.website-col-1 .social .icon-small:hover {
     transform: scale(1.2);
 }
 
@@ -110,7 +115,7 @@ body {
 
 .website-col-2 {
     margin-top: 30px;
-    margin-right: 300px;
+    width: 60vw;
 }
 
 .content {
@@ -233,6 +238,33 @@ body {
 .content-item .duration {
     font-size: 0.8em;
     color: #E5C601;
+}
+
+
+footer {
+    background-color: #000000;
+    color: #E5C601;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 20px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px;
+}
+
+footer .social ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer .social ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 10px;
 }
 
 
